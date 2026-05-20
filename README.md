@@ -11,7 +11,7 @@ El sistema diagnostica el estado del hardware mediante el análisis de:
 ## Tecnologías Aplicadas
 * Lenguaje: Java
 * Paradigma: Programación Orientada a Objetos (POO)
-* Interfaz Gráfica: Java Swing ('JFrame','JPanel', etc.)
+* Interfaz Gráfica: Java Swing ('JFrame', 'JPanel', etc.)
 * Persistencia: Serialización de Objetos ('.dat')
 * Arquitectura: Modelo-Vista-Controlador (MVC)
 
@@ -32,6 +32,9 @@ El diseño del sistema cumple con los principios fundamentales de la POO:
 <img width="587" height="496" alt="image" src="https://github.com/user-attachments/assets/e2046b74-5b1d-4643-92b5-54e56d9139a9" />
 
 <img width="586" height="491" alt="image" src="https://github.com/user-attachments/assets/dffcf5de-6412-4fd7-b423-f39a2fb17e3f" />
+
+<img width="581" height="491" alt="image" src="https://github.com/user-attachments/assets/86181bb2-b5d9-4512-9abf-dc86ccae1cb2" />
+
 
 ## UML
 classDiagram
