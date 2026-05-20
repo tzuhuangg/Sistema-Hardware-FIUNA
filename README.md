@@ -37,6 +37,7 @@ El diseño del sistema cumple con los principios fundamentales de la POO:
 
 
 ## UML
+```mermaid
 classDiagram
     class Computadoras {
         <<abstract>>
@@ -62,5 +63,6 @@ classDiagram
     %% Relaciones de Herencia
     Computadoras <|-- PCEscritorio
     Computadoras <|-- Servidor
+```
 
 *Proyecto Final - Programación Orientada a Objetos (2026)*
