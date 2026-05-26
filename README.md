@@ -22,11 +22,11 @@ El diseño del sistema cumple con los principios fundamentales de la POO:
 * Excepciones Propias: Se desarrolló la excepción personalizada 'ErrorHardwareException' para manejar y reportar fallas del equipo.
 
 ## Instrucciones de Ejecución
-1.  Clonar el repositorio en su máquina local.
+1.  Clonar el repositorio en su PC.
 2.  Abrir el proyecto en su IDE de preferencia (NetBeans, IntelliJ IDEA, Eclipse).
 3.  Asegurarse de tener configurado el JDK 8 o superior.
-4.  Ejecutar el archivo principal ubicado en 'src/principal/Main.java'.
-5.  *Nota sobre persistencia:* Los datos se guardarán automáticamente en la raíz del proyecto bajo el nombre 'inventario_facultad.dat'.
+4.  Ejecutar el archivo principal ubicado en "src/principal/Main.java".
+5.  *Nota sobre persistencia:* Los datos se guardarán automáticamente en la carpeta del proyecto con el nombre "inventario_facultad.dat".
 
 ## Capturas de Pantalla - Interfaz Gráfica
 <img width="587" height="496" alt="image" src="https://github.com/user-attachments/assets/e2046b74-5b1d-4643-92b5-54e56d9139a9" />
@@ -37,32 +37,7 @@ El diseño del sistema cumple con los principios fundamentales de la POO:
 
 
 ## UML
-```mermaid
-classDiagram
-    class Computadoras {
-        <<abstract>>
-        -String inventarioID
-        -double temperaturaCPU
-        -double voltajeFuente
-        +diagnosticoHardware() String
-        +verificarVoltaje() boolean
-        +verificarTemperaturaCPU() boolean
-    }
+[UML Gestion Computadoras.pdf](https://github.com/user-attachments/files/28263019/UML.Gestion.Computadoras.pdf)
 
-    class PCEscritorio {
-        -boolean necesitaMantenimiento
-        +diagnosticoHardware() String
-    }
-
-    class Servidor {
-        -int ventiladoresServidor
-        +verificarVentiladores() boolean
-        +diagnosticoHardware() String
-    }
-
-    %% Relaciones de Herencia
-    Computadoras <|-- PCEscritorio
-    Computadoras <|-- Servidor
-```
 
 *Proyecto Final - Programación Orientada a Objetos (2026)*
