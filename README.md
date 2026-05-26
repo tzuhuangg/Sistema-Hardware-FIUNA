@@ -37,7 +37,6 @@ El diseño del sistema cumple con los principios fundamentales de la POO:
 
 
 ## UML
-[UML Gestion Computadoras.pdf](https://github.com/user-attachments/files/28263019/UML.Gestion.Computadoras.pdf)
-
+[GestionComputadoras.pdf](https://github.com/user-attachments/files/28263052/GestionComputadoras.pdf)
 
 *Proyecto Final - Programación Orientada a Objetos (2026)*
