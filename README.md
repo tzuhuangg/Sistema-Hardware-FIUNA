@@ -19,7 +19,6 @@ El programa actual resuelve estas deficiencias mediante la implementación de un
 <img width="586" height="493" alt="image" src="https://github.com/user-attachments/assets/5a65c51a-ee94-418e-914a-1604535331b8" />
 <img width="763" height="490" alt="image" src="https://github.com/user-attachments/assets/493354d4-c0f3-4727-881a-e7082690b2ed" />
 <img width="763" height="494" alt="image" src="https://github.com/user-attachments/assets/032261c3-263e-4697-9a5d-de1db2bd4d2e" />
-<img width="763" height="492" alt="image" src="https://github.com/user-attachments/assets/53d0a861-a32a-4c91-8bdd-d31d870c48af" />
 <img width="763" height="492" alt="image" src="https://github.com/user-attachments/assets/7e9f0052-fe38-4ce3-bc84-e4118e143621" />
 <img width="760" height="491" alt="image" src="https://github.com/user-attachments/assets/15ef607c-d71e-4e35-a59c-0d4e1ab131ed" />
 <img width="763" height="492" alt="image" src="https://github.com/user-attachments/assets/80a8ae7c-75ee-4ac0-92ed-e915430c5be2" />
