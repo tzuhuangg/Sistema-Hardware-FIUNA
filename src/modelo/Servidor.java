@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
-/**
- *
- * @author recor
- */
 public class Servidor extends Computadoras {
     //ATRIBUTOS
     private int ventiladoresServidor;
@@ -15,6 +7,15 @@ public class Servidor extends Computadoras {
     //CONSTRUCTOR
     public Servidor(int ventiladoresServidor, String inventarioID, double temperaturaCPU, double voltajeFuente) {
         super(inventarioID, temperaturaCPU, voltajeFuente);
+        this.ventiladoresServidor = ventiladoresServidor;
+    }
+    
+    //GETTERS Y SETTERS
+    public int getVentiladoresServidor() {
+        return ventiladoresServidor;
+    }
+
+    public void setVentiladoresServidor(int ventiladoresServidor) {
         this.ventiladoresServidor = ventiladoresServidor;
     }
     
@@ -26,14 +27,28 @@ public class Servidor extends Computadoras {
     
     @Override
     public String diagnosticoHardware() throws ErrorHardwareException{
+        String error="";
         if (!verificarVentiladores())
         {
-            throw new ErrorHardwareException("Problema en el servidor: Sistema de enfriamiento ineficiente.");
+            this.necesitaMantenimiento = true;
+            error+= "Sistema de enfriamiento ineficiente.\n";
         }
-        else if (!verificarVoltaje())
+        if (!verificarVoltaje())
         {
-            throw new ErrorHardwareException("Problemas en la fuente de poder del servidor. Se necesita revision.");
+            this.necesitaMantenimiento = true;
+            error+= "Problemas en la fuente de poder del servidor.\n";
         }
+        if (!verificarTemperaturaCPU())
+        {
+            this.necesitaMantenimiento = true;
+            error+= "Problema de sobrecalentamiento en el servidor.\n";
+        }
+        if (!error.isEmpty())
+        {
+            throw new ErrorHardwareException(error);
+        }
+        
+        this.necesitaMantenimiento = false;
         return "Servidor funcionando correctamente.";
     }
     

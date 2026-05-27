@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controlador;
 
 import java.io.FileInputStream;
@@ -13,10 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import modelo.Computadoras;
 
-/**
- *
- * @author recor
- */
 public class GestionMantenimiento {
     private List<Computadoras> inventario;
 
@@ -47,5 +39,14 @@ public class GestionMantenimiento {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error al cargar datos. "+e.getMessage());
         }
+    }
+    
+    public List<Computadoras> getInventario() {
+        return inventario;
+    }
+    
+    //eliminar una computadora o servidor
+    public boolean eliminarComputadora(String id) {
+        return inventario.removeIf(pc -> pc.getInventarioID().equalsIgnoreCase(id));
     }
 }
