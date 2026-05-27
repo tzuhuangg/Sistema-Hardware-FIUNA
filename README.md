@@ -6,7 +6,7 @@ Tanto la ausencia de validación de umbrales operativos (sobrecalentamiento en l
 
 ## Solución propuesta
 Con este proyecto se busca, tanto optimizar como organizar, la gestión y mantenimiento de las máquinas y servidores de las salas de informática, a través del control de los componentes.
-El programa actual resuelve estas deficiencias mediante la implementación de un sistema de gestión de arquitectura MVC (Modelo-Vista-Controlador) desarrollado en Java. Con este sistema implementamos un motor de diagnóstico con diseño polimórfico que evalúa el estado del hardware basándonos en parámetros específicos según el tipo de nodo (PC de Escritorio o Servidor). Mediante el registro de errores y el uso de excepciones personalizadas, el software automatiza el cambio de estado de los equipos, garantizando la persistencia de los datos en un archivo binario y generando reportes sobre las anomalías, convirtiendo el mantenimiento correctivo en mantenimiento preventivo.
+El programa actual resuelve estas deficiencias mediante la implementación de un sistema de gestión de arquitectura MVC (Modelo-Vista-Controlador) desarrollado en Java. Con este sistema implementamos un motor de diagnóstico con diseño polimórfico que evalúa el estado del hardware basándonos en parámetros específicos según el tipo de nodo (PC de Escritorio o Servidor). Mediante el registro de errores, el software automatiza el cambio de estado de los equipos, garantizando la persistencia de los datos en un archivo binario y generando reportes sobre las anomalías, convirtiendo el mantenimiento correctivo en mantenimiento preventivo.
 
 ## Instrucciones de ejecución
 1.  Copiar el repositorio en su PC.
